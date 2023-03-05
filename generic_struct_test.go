@@ -37,6 +37,16 @@ func TestData(t *testing.T) {
 	fmt.Println(data)
 }
 
+/*
+==	Generic Method
+
+--	Selain di function, kita juga bisa tambahkan generic di method (function di struct)
+--	Namun, generic di method merupakan generic yang terdapat di struct nya.
+--	Kita wajib menyebutkan semua type parameter yang terdapat di struct, walaupun tidak kita gunakan misalnya, atau jika tidak ingin kita gunakan, kita bisa gunakan _ (garis bawah) sebagai pengganti type parameter nya
+--	Method tidak bisa memiliki type parameter yang mirip dengan di function
+
+*/
+
 func TestGenericMethod(t *testing.T) {
 	data := Data[string]{
 		First:  "Ahmad",
